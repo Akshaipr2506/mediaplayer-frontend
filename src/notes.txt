@@ -1,0 +1,123 @@
+react router DOM - helps for setting path for react application
+1) install react roter 
+2) route tag is used to set the path to a given component with the help of path and element attribute
+3) route tag only exist as the child of routes tag
+4) wrap app selector/tag inside browserRouter tag to enable routing
+
+
+bootstrap react grid
+---------------------
+ <Container>
+    <Row>
+        <Col md={3}>
+
+
+json server
+-----------
+json server is alight weight and easy to use node js tool that can stimulate RESTful api using a json file as data source
+- basically used by frontend developers
+- can do CRUD 
+c - create
+r - read
+u - update
+d - delete
+
+steps  to setup json server
+---------------------------
+1) create a separate folder for server 
+2) create package .json file
+    cmnd - npm init -y
+3) install json server library
+    npm i json-server
+    npm i json-server@version 0.17.4
+
+4) create .gitignore 
+5) create json file to store data
+6) index.js
+7) edit the script tag
+8) create the server in the index.js file
+    - import json server library
+    - create the server using create{} method in json server library
+
+    run file 
+    - node index.js
+    - npm start
+
+    middleware
+    ------------
+    - is a function that has the capacity to break the request response cycle.
+
+    defaults()
+    ----------
+    - middleware to parse the json format
+
+
+Axios
+------
+- a technique to create http client request (api calls)
+- based on promise() class
+- will convert the object to json format
+- usage
+--------
+    cmnd
+    1) install axios- npm install axios
+    2) import axios
+    3) use - axios(configuration)
+
+    config={
+        method: http req: get post delete,
+        url: path to serverside, 
+        data: share data,
+        headers: content-type of data
+    }
+    content-types:
+        1) application/json - input field only
+        2) multipart/form-data - uploaded content(files)
+
+
+nodemon - autocompilation of server library
+
+side efects
+--------------
+useEffect - used to handle side effects
+
+useEffect(()=>{
+
+}, dependency)
+first arg: function
+second arg: dependency(optional)
+
+1) no dependency - calls in every render
+2) empty array - useEffect - call when the component render into the browser 
+3) passing state or props[state, props] - call whennthe component render into the browser as well as the value of the sate or props changes.
+
+state lifting
+-------------
+Another method for sharing data between components(other than parent-child)
+- state is created in the closest common parent/ancestor
+- funtion to change the state is passed to the component which provide data and state is passed to the component which display the data
+
+
+sharing data to the server side
+--------------------------------
+- body parameter
+- path parameter
+- query parameter
+
+
+The Intl.DateTimeFormat object enables language-sensitive date and time formatting.
+
+Drag and drop event
+-------------------
+2 attribute ad 3 events
+
+attribute
+-----------
+1) draggable - provide to the element which need to be dragged
+2) droppable - provided to the element where the dropiing happens
+
+events
+-------
+1) onDragStart - setData("key", value) -> to share data
+2) onDragOver
+3) onDrop - getData(key) -> to access data
